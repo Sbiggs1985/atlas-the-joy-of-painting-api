@@ -1,3 +1,9 @@
+-- Create the database (you can only run this once)
+CREATE DATABASE my_database_name;
+
+-- Connect to the database
+\c my_database_name;
+
 -- Create Episodes Table
 CREATE TABLE Episodes (
     episode_id SERIAL PRIMARY KEY,
