@@ -37,8 +37,12 @@
 
 
 <h3>SRC File</h3>
-
 <ul>
+        <li>db.js</li>
+        - This file establishes a connection to a MySQL db using Node.js and the mysql package, which allows interaction with MySQL db's.
+        - Function: CreateDBConnection; this function is responsible for creating & returning a MySQL connection to the db.
+        - Purpose: provides a reusable function "createDBConnection" to connect to the db in other parts of the application.
+
         <li>dbConnection.js</li>
         - Function: Establishes a connection to a MySQL database.
         - How it works: Uses the MySQL module to connect to a MySQL db with crednetails (root user with password). This connection object is returned so it can be used elsewhere in the code for executing queries.
