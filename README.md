@@ -54,5 +54,10 @@
                 4. Uses SQL queries to insert data into different tables in the db, inserting colors into Colors table.
                 5. Handles associations between different data types (e.g., linking colors and subjects to specific episodes.)
         - Purpose: The main logic for loading CSV data into the DB. It reads & parses the data, connects to the db, and inserts data into the appropriate tables.
-
+        
+        <li>dataParser.csv</li>
+        - CSV Parsing - Data Extraction
+        - Functions: Reads CSV files and converts them into an array of objects.
+        - How it works: Uses the csv-parser module to stream and parse a CSV file row by row. It then returns a Promise that resolves when parsing is done. 
+        Purpose: Converts raw data from CSV format into a steuctured JS object format, which can then be processed or inserted into a db.
 </ul>
