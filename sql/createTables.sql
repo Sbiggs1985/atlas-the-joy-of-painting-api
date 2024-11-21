@@ -2,7 +2,7 @@
 CREATE DATABASE my_database_name;
 
 -- Connect to the database
-\c my_database_name;
+\c myDatabase;
 
 -- Create Episodes Table
 CREATE TABLE Episodes (
@@ -77,3 +77,27 @@ INNER JOIN Colors ON EpisodeColors.color_id = Colors.color_id
 INNER JOIN EpisodeSubjects ON Episodes.episode_id = EpisodeSubjects.episode_id
 INNER JOIN Subjects ON EpisodeSubjects.subject_id = Subjects.subject_id
 WHERE Episodes.episode_id = 1;
+
+-- 1. Create Database***
+-- This command creates a new PostgreSQL database.
+
+-- 2. \c myDatabase;
+-- Connects to the db, from here I can start creating tables.
+
+-- 3. Create episode tables
+-- The table was created with episode information.
+
+-- 4. Colors table
+-- Creates the colors table to store data!
+
+-- 5. Creates subject table
+-- Subject information for table.
+
+-- 6. Creates EpisodeColors relationship Table.
+-- Creates the many-to-many relationships between episodes & colors.
+
+-- 7. Create EpisodeSubjects Relationship Table
+-- many-to-Many relations between Episodes & Subjects
+
+-- 8. Query Examples
+-- Gets all colors used in a specific Episode
