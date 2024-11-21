@@ -10,7 +10,7 @@ const createDBConnection = () => {
       host: 'localhost',
       user: 'root',  // MySQL root user
       password: '',    // No password is needed
-      database: 'BobRossDatabase',  // The name of the database to connect to
+      database: 'bob_ross_database',  // The name of the database to connect to
       multipleStatements: true  // Allow executing multiple SQL statements in one query
     });
 

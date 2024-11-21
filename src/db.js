@@ -11,7 +11,7 @@ function createDBConnection() {
     host: 'localhost',
     user: 'root',    // Using root user as is
     password: '',    // No password is needed
-    database: 'BobRossDatabase',
+    database: 'bob_ross_database',
     multipleStatements: true
   });
 
